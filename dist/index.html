@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+    
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>敖秀芳</h1>
+      <img src="/aoao.9a2d0d20.jpg" alt="" width="110">
+      <p>
+        女 | 24岁 | 前端开发工程师 | 北京
+      </p>
+      <p>
+        手机：17649823683 | 微信：17649823683 | 邮箱：1677120510@qq.com
+      </p>
+    </section>
+
+
+
+
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>橙子记账</h3>
+            <span>
+              <a href="https://github.com/ao1115/Orange-money">源码链接</a>
+              <a href="https://ao1115.github.io/Orange-money-website/">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Scss</strong> 的移动端单页面应用。
+          </p>
+
+          <p>
+            这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，简单的收入支出情况的统计。
+          
+          </p>
+          <p>
+            该项目大量使用 <strong>Vue全家桶</strong>，让我对 Vue和 TypeScript 有了深刻的理解和应用。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>前端导航网站</h3>
+            <span>
+              <a href="https://github.com/ao1115/nav-1/tree/master/src">源码链接</a>
+              <a href="https://ao1115.github.io/nav-1/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是一个基于 <strong>jQuery</strong> 的单页面应用。
+          </p>
+          <p>
+            项目主要思路来自谷歌浏览器，制作了一个简易版的网站导航软件。
+          </p>
+          <p>主要功能包括在搜索框里搜索网站和其他信息、点击新建按钮搜索网站、浏览过的网站保存在本地之后可以通过键盘按首字母访问网站。</p>
+          <p>
+            该系统页面简洁，可以保存常用网站，可以用到日常工作中。
+          </p>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉<strong>HTML、CSS</strong>页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+          <li>熟悉<strong>原生JS、jQuery</strong>的使用</li>
+          <li>熟悉 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟悉 ES6，包括 let / const / Promise / 析构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li class="page2">
+          <header>
+            <h3>会动的哆啦A梦</h3>
+            <span>
+              <a href="https://ao1115.github.io/Doraemon-2/dist/index.html">CSS实现动态过程</a>
+              <a href="https://ao1115.github.io/Doraemon-1/src/index.html">完整版预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/ao1115/canvas-demo-1">源码链接</a>
+              <a href="https://ao1115.github.io/canvas-demo-1/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品，实现一个画板功能</p>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3> 杭州海康威视数字技术股份有限公司 </h3>
+            <h4>资质专员</h4>
+            <span><time>2019年7月</time>~<time>2021年7月</time></span>
+          </header>
+          <ul>
+            <li>
+                管理公司公章。配合公司100多个销售处理授权流程和用印流程。审核流程是否规范以及盖章文件是否合规。配合销售打印盖章招投标文件。
+            </li>
+            <li>
+                与总部资质管理员进行对接，及时更新公司资质。解答资质相关问题。
+            </li>
+            <li>
+                每周统计行业相关招投标信息并发布。每月统计授权项目中标情况并发布。
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://juejin.cn/user/3448515904148199">我的博客</a>，平常会用博客来记笔记，加强记忆</li>
+        <li><a href="https://github.com/ao1115">我的 GitHub</a>，学习期间使用GitHub管理代码</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2015年</time>~<time>2019年</time></span>
+        长春理工大学 通信工程 本科</p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  
+</body>
+
+</html>
